@@ -66,11 +66,11 @@
 
 
             setTimeout(function () {
-
+                if(s >= 00){
                 $(".second > .box").eq(0).text(s);
                 $(".second > .box").eq(0).css({ "top": 0 });
                 $(".second > .box").eq(1).css({ "top": "100%" });
-
+                }
                 if (s == 59) {
                     $(".minute > .box").eq(0).text(m);
                     $(".minute > .box").eq(0).css({ "top": 0 });
